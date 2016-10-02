@@ -1,5 +1,5 @@
 {
-    "name": "juliardi/sesuatu",
+    "name": "kenphp/skeleton",
     "authors": [
         {
             "name": "Muhammad Safri Juliardi",
@@ -15,4 +15,3 @@
         }
     }
 }
-
