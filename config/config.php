@@ -5,7 +5,7 @@ $basePath = __DIR__.DIRECTORY_SEPARATOR.'../';
 return [
     'name' => 'Ken Application',
     'basePath' => $basePath,
-    'routeFile' => $basePath.'app/route.php',
+    'routeFile' => $basePath.'app/routes.php',
     'timeZone' => 'UTC',
     'view' => [
         'class' => 'Ken\\View\\TwigEngine',
