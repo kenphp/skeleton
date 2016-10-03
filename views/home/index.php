@@ -2,6 +2,8 @@
 
 <h3>Welcome</h3>
 <b>Time now : <?= $time ?></b>
+<br>
+<b>Templating engine : PHP</b>
     <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor ultricies
         efficitur. Aliquam ullamcorper, lacus sed mollis consectetur, libero leo scelerisque felis,
