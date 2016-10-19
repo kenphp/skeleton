@@ -5,18 +5,24 @@ $basePath = __DIR__.DIRECTORY_SEPARATOR.'../';
 return [
     'name' => 'Ken Application',
     'basePath' => $basePath,
-    'routeFile' => $basePath.'app/routes.php',
-    'timeZone' => 'UTC',
-    'view' => [
-        'class' => 'Ken\\View\\TwigEngine',
-        'path' => $basePath.'views/',
-        'cache' => $basePath.'runtime/views/',
-    ],
-    'log' => [
-        'handler' => 'Ken\\Log\\FileLogger',
-        'config' => [
-            'filepath' => $basePath.'runtime/application.log',
+    'timeZone' => 'Asia/Jakarta',
+    'components' => [
+        'view' => [
+            'engine' => 'Ken\\View\\TwigEngine',
+            'path' => $basePath.'views/',
+            // 'cache' => $basePath.'runtime/views/',
+        ],
+        'logger' => [
             'enabledLevels' => ['info', 'warning', 'error'],
+            'targets' => [
+                'file' => [
+                    'class' => 'Ken\Log\Targets\FileTarget',
+                    'filepath' => $basePath.'runtime/application.log',
+                ],
+            ],
+        ],
+        'router' => [
+            'routeFile' => $basePath.'app/routes.php',
         ],
     ],
 ];

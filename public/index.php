@@ -15,5 +15,4 @@ $whoops->register();
 $config = require_once __DIR__.DIRECTORY_SEPARATOR.'../config/config.php';
 
 $app = new Ken\Application($config);
-
 $app->run();
