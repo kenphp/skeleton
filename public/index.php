@@ -13,6 +13,8 @@ $whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler());
 $whoops->register();
 
 $config = require_once __DIR__.DIRECTORY_SEPARATOR.'../config/config.php';
+$routeFile = $basePath.'app/routes.php';
 
 $app = new Ken\Application($config);
+$app->registerRoutes($routeFile);
 $app->run();

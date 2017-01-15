@@ -21,8 +21,5 @@ return [
                 ],
             ],
         ],
-        'router' => [
-            'routeFile' => $basePath.'app/routes.php',
-        ],
     ],
 ];
