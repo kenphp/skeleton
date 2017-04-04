@@ -8,7 +8,7 @@ return [
     'timeZone' => 'Asia/Jakarta',
     'components' => [
         'view' => [
-            'engine' => 'Ken\\View\\TwigEngine',
+            'engine' => 'Ken\\View\\TwigEngine\\TwigEngine',
             'path' => $basePath.'views/',
             // 'cache' => $basePath.'runtime/views/',
         ],

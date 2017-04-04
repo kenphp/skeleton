@@ -1,9 +1,16 @@
-<?php include_once __DIR__.DIRECTORY_SEPARATOR.'../layouts-php/main.php' ?>
+<?php
+/**
+ * @var \League\Plates\Template\Template
+ */
+ $this->layout('layouts-plates/main')
 
+?>
+
+<?php $this->start('body') ?>
 <h3>Welcome</h3>
 <b>Time now : <?= $time ?></b>
 <br>
-<b>Templating engine : PHP</b>
+<b>Templating engine : Plates</b>
     <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor ultricies
         efficitur. Aliquam ullamcorper, lacus sed mollis consectetur, libero leo scelerisque felis,
@@ -27,5 +34,4 @@
         Duis scelerisque fermentum turpis, sit amet condimentum enim iaculis a.
         Nam commodo quis lorem faucibus placerat.
     </p>
-
-<?php include_once __DIR__.DIRECTORY_SEPARATOR.'../layouts-php/footer.php' ?>
+<?php $this->end() ?>
