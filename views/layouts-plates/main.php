@@ -1,3 +1,8 @@
+<?php
+/**
+ * @var \League\Plates\Template\Template
+ */
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,8 +25,8 @@
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
@@ -40,3 +45,43 @@
         </div>
         <!-- /.container -->
     </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <div class="row">
+
+                <?= $this->insert('layouts-plates/menu') ?>
+
+            <div class="col-md-9">
+
+                <?= $this->section('body') ?>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- /.container -->
+
+    <div class="container">
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; KenPHP 2017</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <?= $this->section('javascript') ?>
+
+</body>
+
+</html>

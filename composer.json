@@ -7,8 +7,10 @@
             "email": "ardi93@gmail.com"
         }
     ],
+    "minimum-stability":"dev",
     "require": {
-        "kenphp/ken":"0.1.1"
+        "kenphp/ken":"*",
+        "kenphp/ken-twig": "dev-master"
     },
     "autoload": {
          "psr-4": {

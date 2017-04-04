@@ -4,7 +4,7 @@
         <a
             href="/"
             class="list-group-item
-            <?php echo (app()->request->pathInfo == '/') ? 'active' : '' ?>"
+            {{ (app().request. pathInfo == '/') ? 'active' : '' }}"
         >
             Index
         </a>
