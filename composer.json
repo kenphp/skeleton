@@ -9,7 +9,7 @@
     ],
     "minimum-stability":"dev",
     "require": {
-        "kenphp/ken":"*",
+        "kenphp/ken":"^0.4.0",
         "kenphp/ken-twig": "dev-master"
     },
     "autoload": {
@@ -19,7 +19,7 @@
     },
     "scripts": {
         "post-install-cmd": [
-            "mkdir runtime"
+            "chmod runtime 777"
         ]
     }
 }
