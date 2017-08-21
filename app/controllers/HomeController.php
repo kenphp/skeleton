@@ -2,7 +2,7 @@
 
 namespace app\controllers;
 
-use Ken\Helper\Log;
+use Ken\Helpers\Log;
 
 /**
  *
