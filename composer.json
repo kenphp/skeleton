@@ -9,7 +9,7 @@
     ],
     "minimum-stability":"dev",
     "require": {
-        "kenphp/ken":"^0.4",
+        "kenphp/ken":"dev-master",
         "kenphp/ken-twig": "dev-master"
     },
     "autoload": {

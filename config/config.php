@@ -6,6 +6,7 @@ return [
     'name' => 'Ken Application',
     'basePath' => $basePath,
     'timeZone' => 'Asia/Jakarta',
+    'debug' => true,
     'components' => [
         'view' => [
             'engine' => 'Ken\\View\\TwigEngine\\TwigEngine',

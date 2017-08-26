@@ -6,12 +6,6 @@ ini_set('display_errors', 1);
 
 require_once __DIR__.DIRECTORY_SEPARATOR.'../vendor/autoload.php';
 
-$whoops = new \Whoops\Run();
-
-$whoops->pushHandler(new \Whoops\Handler\PrettyPageHandler());
-
-$whoops->register();
-
 $config = require_once __DIR__.DIRECTORY_SEPARATOR.'../config/config.php';
 $routeFile = $basePath.'app/routes.php';
 
