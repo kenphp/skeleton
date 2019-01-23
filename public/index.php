@@ -4,11 +4,15 @@ error_reporting(E_ALL);
 
 ini_set('display_errors', 1);
 
-require_once __DIR__.DIRECTORY_SEPARATOR.'../vendor/autoload.php';
+date_default_timezone_set('Asia/Jakarta');
 
-$config = require_once __DIR__.DIRECTORY_SEPARATOR.'../config/config.php';
-$routeFile = $basePath.'app/routes.php';
+$basePath = dirname(__DIR__);
 
+require_once $basePath . '/vendor/autoload.php';
+$config = require_once $basePath . '/config/config.php';
 $app = new Ken\Application($config);
-$app->registerRoutes($routeFile);
+
+require_once $basePath.'/config/routes.php';
+require_once $basePath.'/config/dependencies.php';
+
 $app->run();

@@ -2,7 +2,7 @@
 /**
  * @var \League\Plates\Template\Template
  */
- $this->layout('layouts-plates/main')
+ $this->layout('layouts/main')
 
 ?>
 
