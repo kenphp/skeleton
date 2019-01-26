@@ -17,4 +17,5 @@ return [
     'view' => [
         'viewPath' => $basePath . '/views',
     ],
+    'middlewares' => include_once $basePath . '/config/middlewares.php',
 ];
