@@ -9,7 +9,7 @@
     ],
     "minimum-stability":"dev",
     "require": {
-        "kenphp/ken": "dev-master"
+        "kenphp/ken": "^0.5"
     },
     "autoload": {
          "psr-4": {
