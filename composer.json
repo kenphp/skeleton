@@ -1,5 +1,6 @@
 {
     "name": "kenphp/skeleton",
+    "description": "Web Application skeleton for KenPHP Framework",
     "license": "MIT",
     "authors": [
         {
