@@ -4,7 +4,7 @@ return [
     'name' => 'Ken Application',
     'basePath' => $basePath,
     'controllersNamespace' => 'app\\controllers\\',
-    'debug' => false,
+    'debug' => true,
     'logger' => [
         'enabledLevels' => ['info', 'warning', 'error'],
         'targets' => [
