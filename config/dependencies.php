@@ -6,10 +6,11 @@ use Ken\View\Engine\PlatesEngine;
 $container = $app->getContainer();
 
 $container->set('view', function($c) {
-    $configuration = $c->get('configuration')['view'];
-    $viewFunctions = isset($configuration['viewFunctions']) ? $configuration['viewFunctions'] : [];
+    $config = $c->get('configuration');
+    $viewPath = $config->get('view.viewPath');
+    $viewFunction = $config->get('view.viewFunction', []);
 
-    return new PlatesEngine($configuration['viewPath'], $viewFunctions);
+    return new PlatesEngine($viewPath, $viewFunction);
 });
 
 $container->set(UserController::class, function (ContainerInterface $c) {

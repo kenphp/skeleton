@@ -1,5 +1,10 @@
 <?php
 
+// this configuration can be accessed from $container->get('configuration')
+// it will be a \Ken\Utils\ArrayDot instance,
+// which mean you can access it like an array,
+// or you can access the value like this
+// $config->get('view.viewPath')
 return [
     'name' => 'Ken Application',
     'basePath' => $basePath,
